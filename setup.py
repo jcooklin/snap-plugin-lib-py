@@ -18,8 +18,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="snap-plugin-lib-py",
-    version="0.1.0",
-    packages=find_packages(),
+    version="1.0.0",
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     install_requires=['grpcio>=1.0.0,<2', 'protobuf>=3.1.0,<4',
                       'futures>=3.0.5', 'future>=0.16.0'],
     author="Joel Cooklin",

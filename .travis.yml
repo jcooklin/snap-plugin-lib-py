@@ -1,0 +1,14 @@
+language: python
+sudo: false
+python:
+- '2.7'
+- '3.6'
+install: pip install tox-travis
+script: tox
+deploy:
+  provider: pypi
+  user: $pypi_user
+  password: $pypi_password    
+  on:
+    tags: true
+    repo: intelsdi-x/snap-plugin-lib-py

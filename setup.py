@@ -18,7 +18,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="snap-plugin-lib-py",
-    version="1.0.0",
+    version="1.0.3",
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     install_requires=['grpcio>=1.0.0,<2', 'protobuf>=3.1.0,<4',
                       'futures>=3.0.5', 'future>=0.16.0'],
@@ -26,6 +26,7 @@ setup(
     author_email="joel.cooklin@gmail.com",
     description="This is a lib for creating plugins for the Snap telementry "
                 "framework.",
+    long_description_markdown_filename="README.md",
     license="Apache 2.0",
     keywords="snap telemetry plugin plugins metrics",
     url="http://github.com/intelsdi-x/snap-plugin-lib-py"

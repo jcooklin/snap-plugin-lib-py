@@ -17,6 +17,7 @@ pytest-cov>=2.4.0
 recommonmark==0.4.0
 sphinx-rtd-theme==0.1.9
 tox>=2.4.1
+setuptools_markdown>=0.2
 
 # releasenotes
 reno>=1.8.0 # Apache2
